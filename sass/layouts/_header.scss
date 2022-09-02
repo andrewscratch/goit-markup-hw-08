@@ -1,0 +1,89 @@
+.headsite {
+    border-bottom: 1px solid #ececec;
+    position: fixed;
+    background-color: var(--normal-color);
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .main {
+    padding-top: 80px;
+  }
+  .site-nav .logo {
+    padding-top: 24px;
+    margin-right: 93px;
+  }
+  
+  .site-nav .current {
+    color: var(--accent-color);
+    position: relative;
+  }
+  
+  .site-nav,
+  .otherpages-list,
+  .main-nav,
+  .contacts-list {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  
+  .main-nav {
+    justify-content: space-between;
+  }
+  
+  .otherpages-item:not(:last-child),
+  .contacts-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .otherpages-link,
+  .contacts-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    display: block;
+    padding: 32px 0px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: var(--timing);
+    transition-timing-function: var(--cubic);
+  }
+  
+  .otherpages-link {
+    position: relative;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  
+  .site-nav .current::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    bottom: calc(0px - var(--header-border));
+    right: 0;
+  }
+  
+  .contacts-link {
+    font-style: normal;
+    color: var(--minor-color);
+    display: flex;
+    fill: currentColor;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: var(--timing);
+    transition-timing-function: var(--cubic);
+  }
+  
+  .contacts-icon-tel {
+    margin-right: 10px;
+  }
+  
+  .contacts-icon-mail {
+    margin-right: 10px;
+  }

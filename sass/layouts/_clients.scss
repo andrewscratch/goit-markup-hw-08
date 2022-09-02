@@ -1,0 +1,49 @@
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+    width: 210px;
+    height: 92px;
+    @include tablet {
+      width: 226px;
+    }
+    @include desktop {
+      width: 170px;
+    }
+  }
+  
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  
+ 
+  
+  .clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-decor);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-decor);
+    border-radius: 4px;
+    transition-property: fill, background-color;
+    transition-duration: var(--timing);
+    transition-timing-function: var(--cubic);
+    &:hover,
+  &:focus {
+    fill: currentColor;
+    border-color: currentColor;
+  }
+  }
+  
+  
