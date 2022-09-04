@@ -251,7 +251,7 @@
   }
   
   .send-input {
-    width: 100%;
+    width: 450px;
     @include tablet {
     width: 450px;
     }
@@ -316,9 +316,15 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    @include mobile {
+      gap: 20px;
+    }
     @include desktop {
       display: flex;
       flex-direction: row;
+    @include mobile {
+      gap: 20px;
+    }
       
     }
   }
