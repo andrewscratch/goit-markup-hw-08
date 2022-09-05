@@ -130,7 +130,7 @@
   margin-right: 10px;
 }
 
-.menu-btn {
+.menu-open-btn {
   border: none;
   background: transparent;
   -webkit-box-align: center;
@@ -139,9 +139,117 @@
   margin-right: 23px;
 }
 @media screen and (min-width: 768px) {
-  .menu-btn {
+  .menu-open-btn {
     display: none;
   }
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  padding-top: 21px;
+  padding-bottom: 48px;
+}
+.mob-menu > .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.mob-menu-item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.menu-link-current {
+  color: #2196f3;
+}
+
+.mob-menu-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-contacts-list {
+  margin-top: 64px;
+}
+
+.mob-contacts-item {
+  margin-top: 32px;
+}
+
+.mob-contacts-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-contacts-item:last-child .mob-contacts-link {
+  font-size: 24px;
+  color: #757575;
+  margin: auto;
+}
+
+.mob-soc-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.mob-soc-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-soc-item:not(:last-child):after {
+  content: "";
+  width: 22px;
+  height: 0px;
+  border-right: 1px solid rgba(32, 19, 205, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: top;
+  padding-right: 10px;
 }
 
 h1,

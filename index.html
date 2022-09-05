@@ -70,12 +70,85 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-btn">
+        <button type="button" class="menu-open-btn" data-menu-open>
           <svg class="icon-menu" width="40" height="40">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
+      <div class="mob-menu" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+         <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="mob-menu-close" width="11" height="11">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+          <nav class="mob-menu-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link current"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  href="./portfolio.html"
+                  target="_parent"
+                  class="mob-menu-link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+         <ul class="mob-contacts-list list">
+            <li class="mob-contacts-item">
+              <a href="tel:+380961111111" class="mob-contacts-link">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                lang="en"
+                class="mob-contacts-link"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+            </ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                href="instagram.com"
+                lang="en"
+                class="mob-soc-link"
+              >
+                Instagram</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a href="twitter.com" class="mob-soc-link">
+                Twitter</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a href="facebook.com" class="mob-soc-link">
+                Facebook</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a href="Linkedin.com" class="mob-soc-link">
+                Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+    </div>
     </header>
     <main>
       <section class="hero">
@@ -558,5 +631,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
