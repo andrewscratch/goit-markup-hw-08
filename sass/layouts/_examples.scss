@@ -7,8 +7,14 @@
   
   .examples-item {
     width: 100%;
+    display: grid;
+    flex-direction: column;
+    height: 100%;
     @include tablet {
     width: calc((100% - 30px) / 2);
+    display: grid;
+    flex-direction: column;
+    height: 100%;
     }
     @include desktop {
     max-width: calc((100% - 60px) / 3); }
@@ -71,5 +77,6 @@
     padding: 20px 24px 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    flex-grow: 1;
   }
   
