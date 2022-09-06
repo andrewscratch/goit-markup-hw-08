@@ -4,8 +4,10 @@
     background-color: var(--normal-color);
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1;
   }
+  
   
   .main {
     padding-top: 80px;
@@ -41,7 +43,6 @@
   .otherpages-list,
   .main-nav,
   .contacts-list {
-   
     display: flex;
     justify-content: space-between;
     font-weight: 500;
@@ -49,12 +50,32 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
-  .otherpages-list {
-   display: none
+
+  .contacts-list {
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
     }
+  }
+   .tablet-contacts {
+    @media screen and (max-width: 1199px) {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    }
+   }
+  // .otherpages-list {
+    
+  //     display: none;
+  //   }
 
   .main-nav {
     justify-content: space-between;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
   }
   
   .otherpages-item:not(:last-child),
@@ -75,6 +96,10 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: var(--timing);
     transition-timing-function: var(--cubic);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    
   }
   
   .otherpages-link {
@@ -104,9 +129,14 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: var(--timing);
     transition-timing-function: var(--cubic);
-    @include mobile {
-    display: none;
+    @media screen and (max-width: 768px) {
+      display: none;
     }
+    @media screen and (min-width: 768px) {
+     
+    }
+    
+   
   }
   
   .contacts-icon-tel {
@@ -121,8 +151,8 @@
     border: none;
     background: transparent;
     align-items: center;
-    margin-right: 23px;
-    
+    top: 0;
+    left: 0;
     
     @media screen and (min-width: 768px) {
       display: none;
@@ -145,6 +175,12 @@
       flex-direction: column;
       justify-content: space-between;
     }
+  }
+
+  .mob-menu {
+    @media screen and (min-width: 768px) {
+      display: none;
+  }
 }
   .menu-close-btn {
     display: block;
