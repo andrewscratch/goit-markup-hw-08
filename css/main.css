@@ -1563,8 +1563,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--normal-color);
   border-radius: 4px;
   top: 50%;
@@ -1578,6 +1578,12 @@ body {
   transition: transform var(--timing) var(--cubic), opacity var(--timing) var(--cubic), -webkit-transform var(--timing) var(--cubic);
   opacity: 1;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0);
