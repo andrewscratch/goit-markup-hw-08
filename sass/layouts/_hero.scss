@@ -81,11 +81,12 @@
     text-transform: uppercase;
     color: var(--normal-color);
     @include tablet {
+      width: 380px;
       font-size: 26px;
     }
     @include desktop {
     font-size: 44px;
-    width: 58vw;
+    width: 696px;
     }
     
   }

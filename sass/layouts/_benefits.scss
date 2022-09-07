@@ -67,14 +67,16 @@
   }
   
   .benefits__ph {
-    @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
-}
+//     @media screen and (min-width: 768px) {
+//     margin-bottom: 30px;
+// }
     
     justify-content: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--minor-color);
+    @include desktop {
     padding-bottom: 30px;
+    }
   }

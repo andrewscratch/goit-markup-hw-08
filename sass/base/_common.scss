@@ -2,7 +2,10 @@ body {
     position: relative;
     font-family: "Roboto", sans-serif;
     color: var(--primary-color);
-    padding-top: 80px;
+    padding-top: 55px;
+    @include desktop {
+      padding-top: 80px;
+    }
   }
 
   .list {

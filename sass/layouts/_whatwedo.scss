@@ -17,10 +17,11 @@
 
 .what-we-do__list {
   display: flex;
-  column-gap: 30px;
+  
   display: none;
   @include desktop {
     display: flex;
+    column-gap: 30px;
   }
 }
 .item-title {
@@ -53,5 +54,11 @@
 
 .section--no-padding {
   padding-top: 0;
-  padding-bottom: 94px;
+  
+  @include tablet {
+    padding-bottom: 0;
+  }
+  @include desktop {
+    padding-bottom: 94px;
+  }
 }

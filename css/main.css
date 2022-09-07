@@ -132,6 +132,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .otherpages-list {
+    display: none;
+  }
+}
+
 .otherpages-link {
   position: relative;
   padding-left: 2px;
@@ -190,9 +196,18 @@
 }
 
 .menu-open-btn {
-  margin-left: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
   border: none;
-  background: transparent;
+  color: #212121;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn {
@@ -237,6 +252,7 @@
   margin-left: auto;
   border: none;
   background-color: transparent;
+  fill: var(--accent-color);
 }
 
 .mob-menu-item:not(:last-child) {
@@ -264,17 +280,22 @@
 
 .mob-contacts-list {
   margin-top: 64px;
+  padding-bottom: 32px;
 }
 
 .mob-contacts-item {
   margin-top: 32px;
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .mob-contacts-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
+  font-size: 32px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196F3;
 }
@@ -292,7 +313,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 48px;
 }
 
@@ -481,13 +502,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero-title {
+    width: 380px;
     font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
-    width: 58vw;
+    width: 696px;
   }
 }
 
@@ -626,11 +648,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--minor-color);
-  padding-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .benefits__ph {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -661,9 +682,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
   display: none;
 }
 @media screen and (min-width: 1200px) {
@@ -671,6 +689,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 
@@ -714,7 +735,16 @@ img {
 
 .section--no-padding {
   padding-top: 0;
-  padding-bottom: 94px;
+}
+@media screen and (min-width: 768px) {
+  .section--no-padding {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--no-padding {
+    padding-bottom: 94px;
+  }
 }
 
 .our-team {
@@ -728,9 +758,17 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    gap: 30px;
+  }
 }
 
 .team__item {
@@ -739,11 +777,11 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -753,11 +791,20 @@ img {
 }
 
 .team__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .team__names {
@@ -844,11 +891,20 @@ img {
 }
 
 .clients__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__link {
@@ -925,7 +981,7 @@ img {
 }
 
 .examples-list {
-  margin-top: 50px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,10 +989,16 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .examples-list {
+    margin-top: 50px;
+  }
+}
 
 .examples-item {
-  width: 100%;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1045,7 +1107,12 @@ body {
   position: relative;
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
-  padding-top: 80px;
+  padding-top: 55px;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 .list {
@@ -1082,6 +1149,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footsite {
+    padding-bottom: 0;
+  }
 }
 
 .footer {
@@ -1369,6 +1441,7 @@ body {
 
 .send-input {
   width: 100%;
+  min-width: 315px;
   height: 50px;
   padding: 15px 0px 15px 15px;
   background-color: transparent;
@@ -1382,6 +1455,11 @@ body {
   color: var(--normal-color);
   -webkit-transition: border-color var(--transition-timing);
   transition: border-color var(--transition-timing);
+}
+@media screen and (min-width: 480px) {
+  .send-input {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .send-input {
@@ -1563,8 +1641,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 450px;
-  height: 609px;
+  min-width: 315px;
+  height: 581px;
   background-color: var(--normal-color);
   border-radius: 4px;
   top: 50%;
@@ -1578,6 +1656,12 @@ body {
   transition: transform var(--timing) var(--cubic), opacity var(--timing) var(--cubic), -webkit-transform var(--timing) var(--cubic);
   opacity: 1;
   padding: 40px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    max-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

@@ -1,13 +1,16 @@
 .examples-list {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @include desktop {
+      margin-top: 50px;
+    }
   }
   
   .examples-item {
-    width: 100%;
-    display: grid;
+    // width: 100%;
+    display: flex;
     flex-direction: column;
     height: 100%;
     @include tablet {
@@ -60,6 +63,7 @@
    
   
   .examples-subtitle {
+    // flex-grow: 1;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
