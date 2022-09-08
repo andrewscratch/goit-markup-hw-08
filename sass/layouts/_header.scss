@@ -29,7 +29,8 @@
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-right: 93px;
   }
   
@@ -103,7 +104,7 @@ margin-right: 10px;
   .otherpages-list {
     @media screen and (max-width: 768px) {
       display: none;
-    }
+      }
   }
   
   .otherpages-link {
@@ -165,7 +166,7 @@ margin-right: 10px;
     padding-left: 0;
     padding-right: 0;
     z-index: 1;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       display: none;
     }
   }
@@ -190,7 +191,7 @@ margin-right: 10px;
   }
 
   .mob-menu {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
       display: none;
   }
 }
@@ -291,10 +292,12 @@ color: #2196F3;
  .tablet-contacts {
   display: flex;
   flex-direction: column;
+  // text-align: justify;
   padding: 0;
-  margin-left: 10px;
+  margin-left: auto;
   @media screen and (max-width: 768px) {
     display: none;
+    margin-left: 20px;
   }
     
   }
