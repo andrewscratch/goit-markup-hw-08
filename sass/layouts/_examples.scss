@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+     @include tablet {
+       margin-top: 30px;
+     }
     @include desktop {
       margin-top: 50px;
     }
@@ -76,7 +79,6 @@
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--minor-color);
-    flex-grow: 1;
   }
   
   .examples-frame {

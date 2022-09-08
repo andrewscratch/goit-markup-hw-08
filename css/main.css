@@ -65,6 +65,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 12px;
   }
 }
 
@@ -451,13 +452,19 @@ img {
   background-color: #2f303a;
   text-align: center;
   letter-spacing: 0.06em;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-bg-mob.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-mob.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .box {
@@ -624,11 +631,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-@media screen and (min-width: 480px) {
-  .benefits__subtitle {
-    text-align: center;
-  }
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .benefits__subtitle {
@@ -953,6 +956,11 @@ img {
   margin-right: 8px;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 767px) {
+  .filters-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 .filters-button {
   font-weight: 500;
@@ -985,6 +993,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 767px) {
+  .examples-list {
+    margin-top: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .examples-list {
@@ -1075,9 +1088,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--minor-color);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .examples-frame {
@@ -1105,6 +1115,11 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
   padding-top: 55px;
+}
+@media screen and (min-width: 767px) {
+  body {
+    padding-top: 80px;
+  }
 }
 @media screen and (min-width: 1200px) {
   body {
@@ -1250,6 +1265,7 @@ body {
 
 .address-link {
   font-size: 14px;
+  padding-bottom: 8px;
   display: inline;
   font-style: normal;
   line-height: 1.71;

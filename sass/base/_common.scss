@@ -3,6 +3,9 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--primary-color);
     padding-top: 55px;
+    @include tablet {
+      padding-top: 80px;
+    }
     @include desktop {
       padding-top: 80px;
     }
