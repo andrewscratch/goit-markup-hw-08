@@ -649,11 +649,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--minor-color);
-}
-@media screen and (min-width: 1200px) {
-  .benefits__ph {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 .section {
@@ -1079,15 +1075,15 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--minor-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .examples-frame {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 :root {
