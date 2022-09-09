@@ -1006,6 +1006,7 @@ img {
 }
 
 .examples-item {
+  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
